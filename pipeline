@@ -1,0 +1,21 @@
+
+pipeline {
+    agent any
+    
+    environment{
+        PATH = "/opt/maven/bin:$PATH"
+    }
+    stages{
+        stage("Git Checkout"){
+            steps{
+                git credentialsId: 'gitid', url: 'https://github.com/desainiravp/hello.git'
+            }
+        }
+        stage("Maven Build"){
+            steps{
+               sh "mvn clean package"
+                sh "mv target/*.war target/myweb.war"
+}
+}
+}
+}
