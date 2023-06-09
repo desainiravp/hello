@@ -1,12 +1,12 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-  <title>HTML Tutorial</title>
+<meta charset="UTF-8">
 </head>
 <body>
 
-The content of the document......
+<p>I will display A B C</p> 
+<p>I will display &#65; &#66; &#67;</p> 
 
 </body>
 </html>
